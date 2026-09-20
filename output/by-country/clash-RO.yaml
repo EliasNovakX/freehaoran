@@ -18,26 +18,31 @@ proxies:
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: speedtest.tinkoff.ru
+  sni: css.rbxcdn.com
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
-  server: 85.204.107.175
+  server: 85.204.107.187
   port: 8443
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
-  server: 162.249.125.133
+  server: 172.66.47.54
   port: 443
   udp: true
-  type: hysteria2
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
+  type: vless
+  uuid: cc771b27-27ad-4bf3-bc42-f42cd673edbe
+  tls: true
+  servername: ircp-617.pages.dev.
   skip-cert-verify: false
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed
+    headers:
+      Host: ircp-617.pages.dev.
 proxy-groups:
 - name: PROXIES
   type: select
