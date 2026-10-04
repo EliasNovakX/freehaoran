@@ -16,6 +16,8 @@ proxies:
   network: ws
   ws-opts:
     path: /e8e2cecb6188f7fb
+    headers:
+      Host: argo6.5671234.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   server: hinet1.2yly.com
   port: 24215
