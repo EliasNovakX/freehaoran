@@ -4,15 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "sweedenqfds777.qcloud.surf",
-      "server_port": 21223,
-      "password": "4ad3dbf5-2005-4d96-b56c-a0ca9905cab6",
-      "tls": {
-        "enabled": true,
-        "server_name": "sweedenqfds777.qcloud.surf",
-        "insecure": false
+      "type": "vmess",
+      "tag": "🇨🇳 CN 01 - xiaohe",
+      "server": "120.48.133.162",
+      "server_port": 10086,
+      "uuid": "fde10e39-48bb-4dcf-b3ba-71d711323a54",
+      "security": "auto",
+      "transport": {
+        "type": "ws"
       }
     },
     {
@@ -20,14 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
