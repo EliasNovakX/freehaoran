@@ -23,6 +23,24 @@ proxies:
   udp: true
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: b2a2.velqixa.ir
+  port: 39221
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Pzlcb_PeV3uRgiC2NNoNKw
 proxy-groups:
 - name: PROXIES
   type: select
@@ -30,6 +48,8 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -37,5 +57,7 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
 rules:
 - MATCH,PROXIES
