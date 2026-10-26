@@ -16,7 +16,7 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
   server: 162.249.125.133
   port: 443
@@ -28,7 +28,7 @@ proxies:
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
-  server: bogging-eyeteeth-fly.freesocks.work
+  server: 154.46.31.106
   port: 443
   udp: true
   type: ss
